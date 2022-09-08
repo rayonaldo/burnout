@@ -383,8 +383,39 @@ img{
     background-position: center;
     background-size: cover;
     position: relative;
+    background-color: gray;
 }
+.footer .footer-container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
 
+}
+.footer .footer-container .logo{
+    padding: var(--header-height);
+    font-size: 4rem;
+    margin-bottom: 2rem;
+
+}
+.footer .footer-container .logo span{
+    font-weight: 700;
+
+}
+.footer .footer-container .logo i{
+    display: none;
+}
+.footer ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    margin-bottom: 3rem;
+}
  @media (max-width: 860px) {
     .nav{
         width: 0;

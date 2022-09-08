@@ -1,0 +1,29 @@
+{
+  "url": "http://example.com",
+  "public_id": "eb3ce6c7-ce7e-4638-a072-e5054706f601",
+  "given_name": "string",
+  "family_name": "string",
+  "nickname": "string",
+  "gender": "M",
+  "birthdate": "2019-08-24",
+  "zoneinfo": "string",
+  "locale": "strin",
+  "total_calories": 0,
+  "total_distance": 0,
+  "total_steps": 0,
+  "total_points": 0,
+  "total_activity_duration": null,
+  "reference": "string",
+  "teams": [
+    {
+      "name": "string",
+      "public_id": "eb3ce6c7-ce7e-4638-a072-e5054706f601",
+      "url": "http://example.com",
+      "avatar": "http://example.com"
+    }
+  ],
+  "avatar": "http://example.com",
+  "num_active_challenges": "string",
+  "num_done_challenges": "string",
+  "num_future_challenges": "string"
+}

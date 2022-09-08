@@ -331,6 +331,9 @@ img{
     width: 100%;
     min-height: 60vh;
 }
+.Blog-container .section-header{
+    color: var(--black-color);
+}
 
 
  @media (max-width: 860px) {

@@ -348,9 +348,36 @@ img{
 .Blog-container .Blog-content .inner{
     width: 350px;
     margin-bottom: 1rem;
-    
-}
 
+}
+.Blog-container .Blog-content .inner .Blog-img{
+    position: relative;
+    cursor: pointer;
+}
+.Blog-container .Blog-content .inner .Blog-img{
+    width: 100%;
+    height: 100%;
+}
+.Blog-container .Blog-content .inner .Blog-img::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 71, 01, 0.5);
+    opacity: 0;
+}
+.Blog-container .Blog-content .inner .Blog-img:hover::after{
+    opacity: 1;
+}
+.Blog-container .Blog-content .inner p{
+     font-weight: 300;
+     text-transform: capitalize;
+     line-height: 1.8;
+     text-align: center;
+
+}
 
  @media (max-width: 860px) {
     .nav{

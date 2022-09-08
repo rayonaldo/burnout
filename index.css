@@ -319,6 +319,9 @@ img{
     color: var(--white-color);
     margin-bottom: 1.2rem;
 }
+.Courses-box .box .info .btn{
+    padding: 10px;
+}
 
 
  @media (max-width: 860px) {

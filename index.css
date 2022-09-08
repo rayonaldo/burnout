@@ -331,8 +331,19 @@ img{
     width: 100%;
     min-height: 60vh;
 }
+.Blog-container .section-title{
+    color: var(--black-color);
+}
 .Blog-container .section-header{
     color: var(--black-color);
+}
+.Blog-container .Blog-content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    padding-top: 3rem;
 }
 
 

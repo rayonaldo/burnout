@@ -395,6 +395,13 @@ img{
     min-height: 70vh;
 
 }
+.footer .search-form{
+    width: 25rem;
+    height: 3rem;
+    display: flex;
+    border: 2px solid var(--white-color);
+    align-items: center;
+}
 
  @media (max-width: 860px) {
     .nav{

@@ -260,11 +260,11 @@ img{
 .Courses-container{
     width: 100%;
     min-height: 100vh;
-    background-image: url(images/pexels-anush-gorak-1431282.jpg) no-repeat;
+    background-image: url(images/pexels-heloisa-freitas-1608099.jpg) no-repeat;
     background-position: center;
     background-size: cover;
     clip-path: polygon(50% 0%, 100% 0, 100% 90%, 0 100%,0 0);
-    background-color: gray;
+    background-color: black;
 }
 .Courses-content{
     max-width: 1200px;
@@ -385,6 +385,9 @@ img{
     }
     .About .About-container .left{
         display: none;
+    }
+    .Courses-container{
+        clip-path: polygon(50% 0%, 100% 0, 100% 100%, 0 100%,0 0);
     }
 
    

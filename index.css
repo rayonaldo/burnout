@@ -313,6 +313,12 @@ img{
 .Courses-box .box:hover .info{
     transform: translate(-50%, -50%) scale(1);
 }
+.Courses-box .box .info h3{
+    text-transform: capitalize;
+    font-size: 2rem;
+    color: var(--white-color);
+    margin-bottom: 1.2rem;
+}
 
 
  @media (max-width: 860px) {

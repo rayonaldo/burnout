@@ -1,0 +1,366 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700&family=Raleway:wght@200;300;400;500;600;700;800&display=swap');
+:root{
+    --header-height: 5rem;
+    --main-color: #ff7101;
+    --black-color: #171717;
+    --white-color: #ffffff;
+    --font-body:'Poppins', sans-serif;
+    --font-title:'Raleway', sans-serif;
+
+    --big-font-size: 3.5rem;
+    --h1-font-size: 2.25rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.23rem;
+    --normal-font-size: 1rem;
+
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border: none;
+    outline: none;
+    text-decoration: none;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: var(--font-body);
+    font-style: var(--normal-font-size);
+    color: var(--black-color);
+
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+.btn{
+    display: inline-block;
+    font-family: var(--font-title);
+    border: 1px solid var(--white-color);
+    padding: 1rem 1.5rem;
+    color: var(--black-color);
+    font-style: var(--h2-font-size);
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+}
+
+.btn:hover{
+    color: var(--white-color);
+    border-color: var(--main-color);
+    background-color: var(--main-color);
+}
+
+.header{
+    width: 100%;
+    background-color: #000;
+    padding: 1rem 1.25rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+}
+
+.header-container{
+    max-width: 1300px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+}
+ .logo{
+    display: flex;
+    align-items: center;
+    color: var(--white-color);
+    font-size: var(--h1-font-size);
+    text-transform: uppercase;
+ }
+
+ .logo i{
+    font-size: var(--h1-font-size);
+    transform: rotate(45deg);
+    color: var(--main-color);
+
+ }
+
+ .logo span{
+    font-weight: 200;
+    color: var(--main-color);
+    margin-left: 5px;
+
+ }
+
+ .nav-menu{
+    display: flex;
+    align-items: center;
+ }
+
+ .nav-menu li{
+    margin-left: 1.5rem;
+ }
+
+ 
+
+ .nav-link{
+    font-size: var(--h3-font-size);
+    font-weight: 300;
+    text-transform: uppercase;
+    color: var(--white-color);
+    padding-bottom: 0.5rem;
+    transition: all 0.4s ease-in-out;
+ }
+
+ .nav-link:hover, .active{
+    border-bottom: 2px solid var(--main-color);
+
+ }
+
+ .nav-toggle{
+    display: none;
+ }
+
+ .home{
+    padding: 0;
+
+ }
+
+ .home .slide{
+    width: 100%;
+    height: 110vh;
+    background-size: cover !important;
+    background-position: center !important;
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+    clip-path: polygon(50% 0%, 100% 0, 100% 85%, 0 100%,0 0);
+ }
+
+ .home .slide .content{
+    width: 60rem;
+    transform: translateY(-5rem);
+ }
+
+ .section-title{
+    position: relative;
+    font-style: var(--big-font-size);
+    margin: 1rem 0;
+    color: var(--white-color);
+    text-transform: uppercase;
+ }
+
+ .section-title::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -20px;
+    background: url(images/pexes-eduardo-romero-1886487.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 130px;
+    height: 130px;
+    z-index: -1;
+ }
+
+ .section-header{
+    font-size: var(--h2-font-size);
+    font-family: var(--font-title);
+    font-weight: 300;
+    text-transform: uppercase;
+    color: var(--white-color);
+    margin-top: -20px;
+    z-index: 1;
+ }
+
+ .home p{
+    color: var(--white-color);
+    font-family: var(--font-title);
+    font-size: var(--h2-font-size);
+    padding: 2rem 0;
+ }
+
+ .swiper-pagination-bullet{
+    height: 1rem !important;
+    width: 1rem !important;
+    background-color: var(--white-color) !important;
+    transform: translateY(-7rem) !important;
+
+}
+
+.swiper-pagination-bullet-active{
+    background-color: var(--main-color) !important;
+}
+.About{
+    min-height: 100vh;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+}
+.About-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+
+}
+.About-container .left{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    height: 80vh;
+}
+.About-container .left img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.About-container .left img:first-child{
+    transform: translateY(-30px);
+    filter: grayscale(100%);
+}
+.About-container .right{
+    padding: 0 2rem;
+}
+.About-container .right h1{
+    color: var(--black-color);
+}
+.About-container .right h3{
+    color: var(--black-color);
+}
+.About-container .right p{
+    margin-top: 3rem;
+    line-height: 1.6;
+    font-size: var(--h3-font-size);
+    font-weight: 400;
+}
+.About-container .right .btn{
+    margin: 3rem 0;
+    color: var(--black-color);
+    border-color: var(--main-color);
+}
+.About-container .right .btn:hover{
+    color: var(--white-color);
+}
+.Courses-container{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(images/pexels-anush-gorak-1431282.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    clip-path: polygon(50% 0%, 100% 0, 100% 90%, 0 100%,0 0);
+    background-color: gray;
+}
+.Courses-content{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: var(--header-height) 3rem;
+}
+.Courses-content .section-title{
+    color: var(--white-color);
+}
+.Courses-box{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-top: 3rem;
+}
+.Courses-box .box{
+    width: 300px;
+    height: 200px;
+    margin: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+.Courses-box .box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+ @media (max-width: 860px) {
+    .nav{
+        width: 0;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.8);
+        z-index: 100;
+        transition: all 0.4s ease-in-out;
+        padding-top: var(--header-height);
+    }
+
+     .show-menu{
+        width: 60%;
+    }
+
+    .nav-menu{
+        display: block;
+        text-align: center;
+    }
+
+    .nav-menu li{
+        width: 100%;
+        padding: 1.5rem 0;
+        margin-left: 0;
+    }
+
+    .nav-link{
+        font-style: var(--h2-font-size);
+    }
+
+    .nav-toggle{
+        display: block;
+        z-index: 100;
+    }
+    .nav-toggle i{
+        font-style: var(--big-font-size);
+        color: var(--white-color);
+        padding: 5px;
+        border:1px solid var(--main-color);
+        border-radius: 5px;
+        cursor: pointer;
+
+    }
+
+    .nav-toggle:hover{
+        color: var(--main-color)
+    }
+
+    .home .slide{
+        clip-path: polygon(50% 0%, 100% 0, 100% 85%, 0 100%,0 0);
+    }
+    .home .content{
+        padding-left: 0;
+    }
+    .About .About-container{
+        grid-template-columns: unset;
+    }
+    .About .About-container .left{
+        display: none;
+    }
+
+   
+
+ }

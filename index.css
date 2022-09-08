@@ -322,7 +322,11 @@ img{
 .Courses-box .box .info .btn{
     padding: 10px;
 }
-
+.blog{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: var(--header-height) 3rem;
+}
 
 
  @media (max-width: 860px) {

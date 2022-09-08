@@ -322,10 +322,14 @@ img{
 .Courses-box .box .info .btn{
     padding: 10px;
 }
-.blog{
+.Blog{
     max-width: 1200px;
     margin: 0 auto;
     padding: var(--header-height) 3rem;
+}
+.Blog-container{
+    width: 100%;
+    min-height: 60vh;
 }
 
 

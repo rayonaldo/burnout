@@ -345,6 +345,11 @@ img{
     text-align: center;
     padding-top: 3rem;
 }
+.Blog-container .Blog-content .inner{
+    width: 350px;
+    margin-bottom: 1rem;
+    
+}
 
 
  @media (max-width: 860px) {
